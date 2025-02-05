@@ -6,6 +6,13 @@ import FeaturedBy from "./sections/FeaturedBy";
 import WhyPay from "./sections/WhyPay";
 import HowTo from "./sections/HowTo";
 import CrushDebt from "./sections/CrushDebt";
+import TagManager from "react-gtm-module";
+
+const tagManagerArgs = {
+  gtmId: "GTM-XXXXXXX", // Replace with your GTM ID
+};
+
+TagManager.initialize(tagManagerArgs);
 
 function App() {
   return (
