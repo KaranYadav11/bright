@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.custom-border {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #ffffff80, #00000000) 1;
+}
