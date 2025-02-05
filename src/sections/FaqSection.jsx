@@ -38,10 +38,12 @@ function FaqSection() {
     },
   ];
   return (
-    <section className="max-w-[1918px] bg-white w-full max-h-[840px]  h-[44.2vw] px-[13.26vw] py-[6.3vw] ">
+    <section className="max-w-[1918px] h-full bg-white w-full max-h-[840px]  md:h-[44.2vw] px-[13.26vw] py-[6.3vw] ">
       <div className="max-w-[1415px] max-h-[600px] h-[31.57vw]  mx-auto">
         <h2 className="text-[3.36vw] w-full max-h-[72px] tracking-[-4%] text-[#0E1E14] text-center">
-          <span className="font-bold leading-[3.75vw] ">Frequently asked </span>
+          <span className="font-bold leading-[3.75vw] w-[">
+            Frequently asked{" "}
+          </span>
           <span className=" font-normal leading-[3.75vw] ">questions</span>
         </h2>
         <div className="h-[2px] max-w-[1415px] bg-[#D5D7DB] w-full my-[3.75vw]"></div>

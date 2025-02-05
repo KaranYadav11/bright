@@ -9,7 +9,7 @@ import CrushDebt from "./sections/CrushDebt";
 import TagManager from "react-gtm-module";
 
 const tagManagerArgs = {
-  gtmId: "GTM-TJ9FVGXX", // Replace with your GTM ID
+  gtmId: "GTM-TJ9FVGXX",
 };
 
 TagManager.initialize(tagManagerArgs);
