@@ -15,14 +15,14 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-[#FFFFFF] w-full flex items-center justify-center py-8 px-4 sm:px-[13.26vw] sm:py-[6.3vw] sm:max-w-[1920px] sm:h-[27.5vw] sm:max-h-[523px]">
+    <footer className="bg-[#FFFFff] w-full py-[60px] px-[32px] inline-flex items-center justify-center md:py-8 md:px-4 sm:px-[13.26vw] sm:py-[6.3vw] sm:max-w-[1920px] sm:h-[27.5vw] sm:max-h-[523px]">
       <div className="flex flex-col items-center justify-start gap-4 sm:gap-[1.89vw] w-full max-w-[1413px] sm:h-[14.89vw] sm:max-h-[283px] sm:w-[74.3vw]">
-        <section className="w-full flex items-start justify-between flex-col">
-          <p className="text-[#787F88] text-sm sm:text-[.84vw] sm:leading-[.94vw]">
+        <section className="w-[296px] h-[140px] leading-[14px] text-[12px] flex items-start justify-between flex-col">
+          <p className="text-[#787F88]  sm:text-[.84vw] sm:leading-[.94vw]">
             2024 Bright Capital Inc.
           </p>
           <br />
-          <p className="text-[#787F88] text-sm sm:text-[.84vw] sm:leading-[.94vw]">
+          <p className="text-[#787F88]  sm:text-[.84vw] sm:leading-[.94vw]">
             Revolving lines of credit are made by CBW Bank, Member FDIC, and
             Bright Capital Inc., NMLS (2410428), subject to state residency.
             Personal loans are made by our referral partners independent of
@@ -35,12 +35,13 @@ function Footer() {
           </p>
         </section>
 
-        <section className="w-full flex flex-col items-start justify-between text-[#787F88] text-sm sm:text-[.84vw] sm:leading-[.94vw]">
+        <section className="w-[296px] h-[350px] md:w-full md:h-auto flex flex-col items-start justify-between text-[#787F88] text-[12px] sm:text-[.84vw] leading-[14px] sm:leading-[.94vw]">
           <ul className="space-y-2">
             {data.map((item, index) => (
               <li
                 key={index}
-                className="text-sm sm:text-[.84vw] sm:leading-[.94vw]"
+                className="
+               sm:text-[.84vw] sm:leading-[.94vw]"
               >
                 {index + 1}. {item.subtitle}
               </li>
