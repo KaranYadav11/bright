@@ -28,8 +28,7 @@ const StarIcon = () => (
 function WhatPeopleSay({ review }) {
   return (
     <section
-      className="
-        flex 
+      className={`    flex 
         flex-col 
         justify-start 
         items-start 
@@ -42,7 +41,8 @@ function WhatPeopleSay({ review }) {
         flex-none 
         order-1 
         flex-grow-0
-      "
+        ${review?.hidden ? "opacity-0" : ""}
+        `}
     >
       <div className="h-[19.82px] w-[134px]  flex items-center justify-start">
         {Array.from({ length: 5 }).map((_, i) => (
