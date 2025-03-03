@@ -6,11 +6,11 @@ function CrushDebt() {
       {/* Text */}
       <div className="max-h-[169px]   max-w-[617px] absolute top-[60px] left-1/2 gap-[12px] inline-flex flex-col transform -translate-x-1/2">
         <p className="text-[#0E1E14] text-[32px] leading-[38px] w-[296px] h-[77px] tracking-tight text-center md:text-left md:text-[3.3vw]">
-          <span className="font-bold tracking-[-2px] leading-[4.4vw]">
+          <span className="font-bold tracking-[-1px] leading-[38px]">
             Crush Debt today<sup>1</sup>&nbsp;
           </span>
           <br />
-          <span className="font-normal tracking-[-2px] leading-[4.4vw]">
+          <span className="font-normal tracking-[-1px] leading-[38px]">
             with Bright
           </span>
         </p>
