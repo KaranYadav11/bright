@@ -24,8 +24,8 @@ const reviews = [
 
 function ChangingLives() {
   return (
-    <section className="max-w-[1920px]  flex bg-white items-center justify-center  w-full h-[522.46px]  px-[32px] py-[60px] ">
-      <div className="w-[296px]   flex flex-col items-center justify-start  h-[402.46px] ">
+    <section className="max-w-[1920px] overflow-x-hidden flex bg-white items-center justify-center  w-full h-[522.46px]  px-[32px] py-[60px] ">
+      <div className="w-[296px]  flex flex-col items-center justify-start  h-[402.46px] ">
         <div className="h-[136px] gap-[12px] text-[#030303] flex items-center justify-center  flex-col   w-full">
           <h2 className="text-[32px]  h-[76px]  leading-[38px] tracking-[-1px]  font-bold  text-center">
             Changing lives{" "}
@@ -41,9 +41,11 @@ function ChangingLives() {
           </h3>{" "}
         </div>
         <hr className="h-[2px] text-[#D5D7DB] w-[296px] my-[31px]"></hr>
-        <div className="w-[296px]  overflow-x-scroll scrollbar-hide h-[202.46px] flex items-center justify-start gap-[32px] ">
+        <div className="max-w-[552px] overflow-x-scroll snap-mandatory snap-x scrollbar-hide h-[202.46px] flex items-center justify-start gap-[32px] self-start">
           {reviews.map((review, index) => (
-            <WhatPeopleSay key={index} review={review} />
+            <div key={index} className="snap-start">
+              <WhatPeopleSay review={review} />
+            </div>
           ))}
         </div>
       </div>

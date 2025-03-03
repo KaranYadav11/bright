@@ -65,7 +65,7 @@ function WhatPeopleSay({ review }) {
         "
       >
         <p className="">{review?.text}</p>
-        <p className=" font-semibold">{review?.name}</p>
+        <p className="w-fit h-fit font-semibold">{review?.name}</p>
       </div>
     </section>
   );
