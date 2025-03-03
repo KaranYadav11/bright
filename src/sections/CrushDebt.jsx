@@ -3,11 +3,11 @@ import card from "./../assets/card.png";
 
 function CrushDebt() {
   return (
-    <section className=" h-[480px] md:max-w-[1920px] overflow-hidden relative  max-h-[480px] sm:h-[25.26vw]  bg-gradient-to-r from-[#E5F1E3] to-[#BAE8CB]">
+    <section className=" h-[480px] font-montserrat md:max-w-[1920px] overflow-hidden relative  max-h-[480px] sm:h-[25.26vw]  bg-gradient-to-r from-[#E5F1E3] to-[#BAE8CB]">
       {/* Text */}
       <div className="max-h-[169px]   max-w-[617px] absolute top-[60px] left-1/2 gap-[12px] inline-flex flex-col transform -translate-x-1/2">
         <p className="text-[#0E1E14] text-[32px] leading-[38px] w-[296px] h-[77px] tracking-tight text-center md:text-left md:text-[3.3vw]">
-          <span className="font-bold tracking-[-1px] leading-[38px]">
+          <span className="font-bold font-montserrat tracking-[-1px] leading-[38px]">
             Crush Debt today<sup>1</sup>&nbsp;
           </span>
           <br />

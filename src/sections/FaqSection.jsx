@@ -42,7 +42,7 @@ function FaqSection() {
     },
   ];
   return (
-    <section className="max-w-[1920px] h-[549px] bg-white w-full max-h-[840px]  py-[60px] px-[32px] ">
+    <section className="max-w-[1920px] font-montserrat h-[549px] bg-white w-full max-h-[840px]  py-[60px] px-[32px] ">
       <div className="max-w-[296px] max-h-[429px]  mx-auto">
         <h2 className="text-[32px]  w-[296px0] h-[77px] tracking-[-4%] leading-[38px] text-[#030303] text-center">
           <span className="font-bold ">Frequently asked </span>

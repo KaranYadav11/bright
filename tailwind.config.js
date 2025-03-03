@@ -6,8 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        custom: ["Inter", "sans-serif"], // Replace with your desired custom font
-        header: ["CustomFont", "sans-serif"], // Replace with your custom font for headers
+        custom: ["Inter", "sans-serif"],
       },
     },
   },

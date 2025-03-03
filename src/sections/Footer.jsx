@@ -15,7 +15,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-[#FFFFff] w-full py-[60px] px-[32px] inline-flex items-center justify-center md:py-8 md:px-4 sm:px-[13.26vw] sm:py-[6.3vw] sm:max-w-[1920px] sm:h-[27.5vw] sm:max-h-[523px]">
+    <footer className="bg-[#FFFFff] font-montserrat w-full py-[60px] px-[32px] inline-flex items-center justify-center md:py-8 md:px-4 sm:px-[13.26vw] sm:py-[6.3vw] sm:max-w-[1920px] sm:h-[27.5vw] sm:max-h-[523px]">
       <div className="flex flex-col items-center justify-start gap-4 sm:gap-[1.89vw] w-full max-w-[1413px] sm:h-[14.89vw] sm:max-h-[283px] sm:w-[74.3vw]">
         <section className="w-[296px] h-[140px] leading-[14px] text-[12px] flex items-start justify-between flex-col">
           <p className="text-[#787F88]  sm:text-[.84vw] sm:leading-[.94vw]">
