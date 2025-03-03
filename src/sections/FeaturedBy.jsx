@@ -3,6 +3,7 @@ import cheddar from "../assets/images/cheddar.png";
 import yahoo from "../assets/images/yahoo.png";
 import fortune from "../assets/images/fortune.png";
 import cnbc from "../assets/images/cnbc.png";
+
 const featuredLogos = [
   { src: bloomberg, alt: "Bloomberg" },
   { src: yahoo, alt: "Yahoo! Finance" },
@@ -10,11 +11,48 @@ const featuredLogos = [
   { src: cheddar, alt: "Cheddar" },
   { src: cnbc, alt: "CNBC" },
 ];
+
 function FeaturedBy() {
   return (
-    <div className=" bg-[#F4F5F8] flex items-center justify-center py-[2.7vw] max-w-[1920px] w-full max-h-[155.95px] h-[8vw]">
-      <div className="flex items-center justify-between max-w-[1158.11px] w-full max-h-[52px] h-[2.7vw]">
-        <p className="text-[#959AA5] tracking-[2%] text-[.9vw] font-bold">
+    <div
+      className="
+        flex 
+        flex-col 
+        justify-center 
+        items-center 
+        px-8 
+        py-3 
+        gap-[2px] 
+        w-full
+        h-[38.35px] 
+        bg-[#F4F5F8] 
+        flex-none 
+        order-1 
+        flex-grow-0
+      "
+    >
+      <div
+        className="
+          flex 
+          flex-row 
+          justify-between 
+          items-center 
+          w-[324px] 
+          h-[14.35px]
+        "
+      >
+        <p
+          className="
+            text-[#959AA5] 
+            tracking-[0.02em] 
+            leading-[6.78px] 
+            text-[5.61px] 
+            font-bold 
+            w-[46.89px] 
+            h-[6.41px] 
+            m-0
+          "
+        >
           AS FEATURED BY
         </p>
         {featuredLogos.map((logo, index) => (
@@ -22,7 +60,12 @@ function FeaturedBy() {
             key={index}
             src={logo.src}
             alt={logo.alt}
-            className="h-6 md:h-8 lg:h-10 object-contain opacity-80 "
+            className="
+              h-[14.35px] 
+              w-[auto]
+              object-contain 
+              opacity-80
+            "
           />
         ))}
       </div>
