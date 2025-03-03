@@ -1,7 +1,7 @@
 function Logo() {
   return (
     <svg
-      className="w-[5.7vw] h-[1.3vw]"
+      className="w-auto h-[15.32px]"
       width="109"
       height="26"
       viewBox="0 0 109 26"
