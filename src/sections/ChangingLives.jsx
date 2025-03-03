@@ -24,23 +24,30 @@ const reviews = [
 
 function ChangingLives() {
   return (
-    <div className="max-w-[1920px]  w-full max-h-[675px] h-[35.5vw] px-[13.26vw] py-[6.3vw] bg-white">
-      <div className="max-w-[1476px] flex flex-col items-center justify-between max-h-[435px] h-[22.6vw] w-full">
-        <div className="max-w-[1468px] text-[#0E1E14] flex items-center justify-center space-y-2 flex-col max-h-[144px] h-[7.5vw] w-full">
-          <h2 className="text-[3.3vw] tracking-[-4%]  font-bold leading-[2.6vw] text-center">
-            Changing lives every day.
+    <section className="max-w-[1920px]  flex bg-white items-center justify-center  w-full h-[522.46px]  px-[32px] py-[60px] ">
+      <div className="w-[296px]   flex flex-col items-center justify-start  h-[402.46px] ">
+        <div className="h-[136px] gap-[12px] text-[#030303] flex items-center justify-center  flex-col   w-full">
+          <h2 className="text-[32px]  h-[76px]  leading-[38px] tracking-[-1px]  font-bold  text-center">
+            Changing lives{" "}
+            <span
+              className="
+            inline-block"
+            >
+              every day.
+            </span>
           </h2>
-          <p className="text-[1.25vw] font-normal leading-[2.6vw] tracking-[-4%] text-center">
+          <h3 className="text-[16px] w-full  leading-[24px]  h-[48px] font-normal  text-center">
             See how Bright users<sup>3</sup> reached financial well-being.
-          </p>{" "}
+          </h3>{" "}
         </div>
-        <div className=" flex items-center justify-between max-h-[219px] max-w-[1476px] w-full h-[11.4vw]">
+        <hr className="h-[2px] text-[#D5D7DB] w-[296px] my-[31px]"></hr>
+        <div className="w-[296px]  overflow-x-scroll scrollbar-hide h-[202.46px] flex items-center justify-start gap-[32px] ">
           {reviews.map((review, index) => (
             <WhatPeopleSay key={index} review={review} />
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

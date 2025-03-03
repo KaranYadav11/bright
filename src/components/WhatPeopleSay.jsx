@@ -1,6 +1,6 @@
 const StarIcon = () => (
   <svg
-    className="size-[1.14vw]"
+    className="w-[19.82px] h-[20.86px]" // Using consistent width and height for mobile
     viewBox="0 0 22 21"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -27,21 +27,47 @@ const StarIcon = () => (
 
 function WhatPeopleSay({ review }) {
   return (
-    <div className="max-w-[260px] max-h-[219px] flex items-start justify-between flex-col bg-[#F4F5F8] rounded-[0.92vw] p-[1.45vw] w-[13.54vw] h-[11.4vw]">
-      <div className=" max-h-[20px] max-w-[134px] w-[6.9vw] h-[1vw] flex items-center justify-start ">
+    <section
+      className="
+        flex 
+        flex-col 
+        justify-start 
+        items-start 
+        p-7 
+        gap-5 
+        w-[260px] 
+        h-[202.46px] 
+        bg-[#F4F5F8] 
+        rounded-[17.7px] 
+        flex-none 
+        order-1 
+        flex-grow-0
+      "
+    >
+      <div className="h-[19.82px] w-[134px]  flex items-center justify-start">
         {Array.from({ length: 5 }).map((_, i) => (
           <StarIcon key={i} />
         ))}
       </div>
-      <div className=" max-h-[124px] flex items-start justify-between flex-col  h-[6.4vw] w-[10.6vw] max-w-[205px] text-left text-[0.72vw] text-[#0E1E14] ">
-        <p className="leading-[.92vw]">
-          {/* To pay off my credit card debt I’m using Bright money App. It’s really
-          easy to use and their customer service is excellent. They are helpful. */}
-          {review?.text}
-        </p>
-        <p className="leading-[.92vw] font-semibold">{review?.name}</p>
+      <div
+        className="
+          flex 
+          flex-col 
+          justify-between 
+          items-start 
+          font-normal
+          h-[107px] 
+          w-[205.17px] 
+          text-left 
+          text-[12px] 
+          leading-[17.69px]
+          text-[#0E1E14]
+        "
+      >
+        <p className="">{review?.text}</p>
+        <p className=" font-semibold">{review?.name}</p>
       </div>
-    </div>
+    </section>
   );
 }
 
