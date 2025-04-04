@@ -34,38 +34,29 @@ function ChangingLives() {
       className="
         max-w-[1920px] 
         flex 
-        bg-white 
+        bg-red-700
         items-center 
         justify-center 
         w-full 
-        h-[522.46px] 
-        px-8 
+       
+        px-[32px]
         py-[60px] 
         overflow-x-hidden
+lg:py-[calc(3.85vw+46px)] lg:px-[calc(14.1vw-19px)] 
       "
     >
       <div
         className="
-          w-[296px] 
+        bg-pink-500
+          w-full 
           flex 
           flex-col 
           items-center 
           justify-start 
-          h-[402.46px]
+          h-fit
         "
       >
-        <div
-          className="
-            h-[136px] 
-            gap-3 
-            text-[#030303] 
-            flex 
-            flex-col 
-            items-center 
-            justify-center 
-            w-full
-          "
-        >
+        <div className="h-[136px bg-yellow-600 gap-3 text-[##0E1E14] flex  flex-col items-center justify-center w-full  mb-[31px]  lg:mb-12">
           <h2
             className="
               text-[32px] 
@@ -74,6 +65,8 @@ function ChangingLives() {
               tracking-[-1px] 
               font-bold 
               text-center
+              lg:text-[52px]
+              lg:leading-[40px]
             "
           >
             Changing lives <span className="inline-block">every day.</span>
@@ -86,15 +79,19 @@ function ChangingLives() {
               h-[48px] 
               font-normal 
               text-center
+              tracking-tight
+              lg:text-[20px]
+              lg:leading-[40px]
             "
           >
             See how Bright users<sup>3</sup> reached financial well-being.
           </h3>
         </div>
-        <hr className="h-[2px] text-[#D5D7DB] w-[296px] my-[31px]" />
+        <hr className="h-[2px] text-[#D5D7DB] max-w-[1414.67px] w-full my-[31px] md:hidden" />
         <div
           className="
-            w-[552px] 
+          bg-purple-500
+            w-full
             overflow-x-scroll 
             snap-x 
             snap-proximity 

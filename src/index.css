@@ -1,10 +1,7 @@
+/* styles.css */
 @import "tailwindcss";
 
-.custom-border {
-  border-width: 0.21px;
-  border-style: solid;
-  border-image: linear-gradient(to right, #ffffff80, #00000000) 1;
-}
+@tailwind utilities;
 
 html {
   scroll-behavior: smooth;
@@ -15,7 +12,15 @@ html {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
   .scrollbar-hide::-webkit-scrollbar {
     display: none; /* Chrome, Safari, and Opera */
+  }
+
+  .res-p {
+    padding-top: calc(3.85vw + 46px);
+    padding-bottom: calc(3.85vw + 46px);
+    padding-left: calc(14.1vw - 19px);
+    padding-right: calc(14.1vw - 19px);
   }
 }

@@ -1,6 +1,6 @@
 function GetStarted() {
   return (
-    <button className="h-[40px] w-[296px] rounded-[11px] bg-[#0E1E14] flex items-center justify-center gap-[10px] cursor-pointer">
+    <button className="h-[40px] lg:hidden w-[296px] rounded-[11px] bg-[#0E1E14] flex items-center justify-center gap-[10px] cursor-pointer">
       <h4 className="text-white text-[14px] font-semibold leading-[24px] inline-block">
         Get Started
       </h4>

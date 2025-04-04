@@ -3,37 +3,48 @@ import card from "./../assets/card.png";
 
 function CrushDebt() {
   return (
-    <section className=" h-[480px] font-montserrat md:max-w-[1920px] overflow-hidden relative  max-h-[480px] sm:h-[25.26vw]  bg-gradient-to-r from-[#E5F1E3] to-[#BAE8CB]">
-      {/* Text */}
-      <div className="max-h-[169px]   max-w-[617px] absolute top-[60px] left-1/2 gap-[12px] inline-flex flex-col transform -translate-x-1/2">
-        <p className="text-[#0E1E14] text-[32px] leading-[38px] w-[296px] h-[77px] tracking-tight text-center md:text-left md:text-[3.3vw]">
-          <span className="font-bold font-montserrat tracking-[-1px] leading-[38px]">
-            Crush Debt today<sup>1</sup>&nbsp;
-          </span>
-          <br />
-          <span className="font-normal tracking-[-1px] leading-[38px]">
-            with Bright
-          </span>
-        </p>
-        <GetStarted />
-      </div>
+    <section className="max-w-[1920px] w-full overflow-hidden relative max-h-[480px] h-[480px] lg:py-[calc(3.85vw+46px)] lg:px-[calc(14.1vw-19px)] bg-gradient-to-r from-[#E5F1E3] to-[#BAE8CB]">
+      {/* Amber Background */}
+      <div className="w-full h-full relative  flex items-center lg:justify-between justify-center">
+        {/* Pink Text Container */}
+        <div className="h-fit left-1/2 w-fit  max-w-[617px] gap-[12px] inline-flex flex-col absolute lg:static lg:translate-x-0 lg:translate-y-0 transform -translate-x-1/2 top-[60px] lg:top-auto lg:left-auto lg:order-1">
+          <p className="text-[#0E1E14] text-[32px]  lg:text-[52px] leading-[38px] lg:leading-[72px] w-[296px] h-[77px] lg:h-fit lg:w-fit tracking-tight text-center lg:text-left">
+            <span className="font-bold tracking-[-1px]">
+              Crush Debt today<sup>1</sup>
+            </span>
+            <br />
+            <span className="font-normal tracking-[-1px]">with Bright</span>
+          </p>
+          <GetStarted />
+        </div>
 
-      {/* Circle 1 */}
-      <div className="absolute top-[392.22px] size-[238px] xl:block md:size-[22.7vw] transform left-1/2 -translate-x-1/2  md:top-[1.21vw] md:left-[62.26vw] max-w-[433.9px] max-h-[433.9px] border-[1.07px] border-[#17C95F] rounded-full"></div>
+        {/* Circle 1 */}
+        <div className="absolute top-[392.22px] lg:hidden size-[238px] transform left-1/2 -translate-x-1/2 max-w-[433.9px] max-h-[433.9px] border-[1.07px] border-[#17C95F] rounded-full"></div>
 
-      {/* Circle 2 */}
-      <div className="absolute transform left-1/2 -translate-x-1/2 size-[349px] xl:block md:size-[33.1vw] opacity-60 top-[336px] md:top-[-4.06vw] md:left-[57vw] max-w-[635.74px] max-h-[635.74px] border-[0.53px] border-[#17C95F] rounded-full"></div>
+        {/* Circle 2 */}
+        <div className="absolute top-[336px] lg:hidden size-[349px] transform left-1/2 -translate-x-1/2 opacity-60 max-w-[635.74px] max-h-[635.74px] border-[0.53px] border-[#17C95F] rounded-full"></div>
 
-      {/* Circle 3 */}
-      <div className="absolute size-[480px] border-[0.27px] top-[271px] transform left-1/2 -translate-x-1/2 xl:block md:size-[45.6vw] opacity-45 md:top-[-10.38vw] md:left-[50.68vw] max-w-[875.21px] max-h-[875.21px] border-[#17C95F] rounded-full"></div>
+        {/* Circle 3 */}
+        <div className="absolute top-[271px] lg:hidden size-[480px] transform left-1/2 -translate-x-1/2 opacity-45 max-w-[875.21px] max-h-[875.21px] border-[0.27px] border-[#17C95F] rounded-full"></div>
 
-      {/* Card Image */}
-      <div className="max-h-[480px]  flex items-center justify-center max-w-[894px] md:h-[25.26vw] md:w-[47.05vw] w-full h-[237px] absolute  left-1/2  transform -translate-x-1/2   bottom-0 md:top-0 md:left-[50.15vw]">
-        <img
-          src={card}
-          alt="card"
-          className="md:w-[27vw] w-[360px] h-auto max-w-[517.55px] max-h-[479.91px]"
-        />
+        {/* Parent Container */}
+        <div className="max-h-[480px] flex items-center justify-center max-w-[894px] w-fit h-[237px] lg:h-fit absolute left-1/2 bottom-0 -translate-x-1/2  lg:static lg:translate-x-0 lg:translate-y-0 lg:top-auto lg:left-auto lg:order-1">
+          {/* New Circle 1 - Innermost */}
+          <div className="absolute size-[238px] hidden xl:block md:size-[22.7vw] transform left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 max-w-[433.9px] max-h-[433.9px] border-[1.07px] border-[#17C95F] rounded-full opacity-100"></div>
+
+          {/* New Circle 2 - Middle */}
+          <div className="absolute size-[349px] hidden xl:block md:size-[33.1vw] transform left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 max-w-[635.74px] max-h-[635.74px] border-[0.53px] border-[#17C95F] rounded-full opacity-60"></div>
+
+          {/* New Circle 3 - Outermost */}
+          <div className="absolute size-[480px] hidden xl:block md:size-[45.6vw] transform left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 max-w-[875.21px] max-h-[875.21px] border-[0.27px] border-[#17C95F] rounded-full opacity-45"></div>
+
+          {/* Card Image */}
+          <img
+            src={card}
+            alt="card"
+            className="relative w-[360px] lg:w-[430px]  h-auto max-w-[517.55px] max-h-[479.91px]"
+          />
+        </div>
       </div>
     </section>
   );

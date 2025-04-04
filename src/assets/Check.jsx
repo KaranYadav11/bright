@@ -1,7 +1,7 @@
 function Check() {
   return (
     <svg
-      className="h-auto w-[17.22px]"
+      className="h-auto w-[17.22px] lg:w-[28px]"
       viewBox="0 0 30 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

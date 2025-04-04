@@ -36,11 +36,16 @@ function WhatPeopleSay({ review }) {
         gap-5 
         w-[260px] 
         h-[202.46px] 
+        lg:p-5
+        lg:gap-3
+        lg:w-[230px]
+        lg:h-[180px]
         bg-[#F4F5F8] 
         rounded-[17.7px] 
         flex-none 
         order-1 
         flex-grow-0
+        
         ${review?.hidden ? "opacity-0" : ""}
         `}
     >
