@@ -1,6 +1,6 @@
 const StarIcon = () => (
   <svg
-    className="w-[19.82px] h-[20.86px]" // Using consistent width and height for mobile
+    className="w-[19.82px] h-[20.86px]" // Consistent size for all breakpoints
     viewBox="0 0 22 21"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,8 @@ const StarIcon = () => (
 function WhatPeopleSay({ review }) {
   return (
     <section
-      className={`    flex 
+      className={`
+        flex 
         flex-col 
         justify-start 
         items-start 
@@ -36,20 +37,19 @@ function WhatPeopleSay({ review }) {
         gap-5 
         w-[260px] 
         h-[202.46px] 
-        lg:p-5
+        lg:p-4
         lg:gap-3
-        lg:w-[230px]
-        lg:h-[180px]
+        lg:w-[200px]
+        lg:h-[160px]
         bg-[#F4F5F8] 
         rounded-[17.7px] 
         flex-none 
         order-1 
         flex-grow-0
-        
         ${review?.hidden ? "opacity-0" : ""}
-        `}
+      `}
     >
-      <div className="h-[19.82px] w-[134px]  flex items-center justify-start">
+      <div className="h-[19.82px] w-[134px] flex items-center justify-start">
         {Array.from({ length: 5 }).map((_, i) => (
           <StarIcon key={i} />
         ))}
@@ -67,9 +67,13 @@ function WhatPeopleSay({ review }) {
           text-[12px] 
           leading-[17.69px]
           text-[#0E1E14]
+          lg:h-[90px]
+          lg:w-full
+          lg:text-[11px]
+          lg:leading-[16px]
         "
       >
-        <p className="">{review?.text}</p>
+        <p>{review?.text}</p>
         <p className="w-fit h-fit font-semibold">{review?.name}</p>
       </div>
     </section>

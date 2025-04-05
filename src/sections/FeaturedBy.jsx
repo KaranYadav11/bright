@@ -22,6 +22,7 @@ function FeaturedBy() {
         items-center 
         px-8 
         py-3 
+        lg:h-[8.125vw]
         gap-[2px] 
         w-full
         h-[38.35px] 
@@ -33,12 +34,16 @@ function FeaturedBy() {
     >
       <div
         className="
+
           flex 
           flex-row 
           justify-between 
           items-center 
           w-[324px] 
+          lg:w-fit
           h-[14.35px]
+          lg:h-[2.7vw]
+          lg:gap-16
         "
       >
         <p
@@ -49,8 +54,11 @@ function FeaturedBy() {
             text-[5.61px] 
             font-bold 
             w-[46.89px] 
+            lg:w-[8.125vw]
             h-[6.41px] 
-            m-0
+            lg:text-[0.9vw]
+            lg:h-fit
+            lg:tracking-wide
           "
         >
           AS FEATURED BY
@@ -62,7 +70,9 @@ function FeaturedBy() {
             alt={logo.alt}
             className="
               h-[14.35px] 
+              lg:h-[35px]
               w-[auto]
+              lg:mr-6
               object-contain 
               opacity-80
             "

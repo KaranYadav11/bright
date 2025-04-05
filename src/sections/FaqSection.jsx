@@ -1,13 +1,6 @@
-// import { useState } from "react";
 import { Check, X } from "lucide-react";
 
 function FaqSection() {
-  // const [openIndex, setOpenIndex] = useState(null);
-
-  // const toggleFAQ = (index) => {
-  //   setOpenIndex(openIndex === index ? null : index);
-  // };
-
   const faqs = [
     {
       question: "Can I pay off or close my account anytime?",
@@ -44,7 +37,7 @@ function FaqSection() {
   ];
   return (
     <section className="max-w-[1920px] bg-white w-full px-[32px] py-[60px] lg:py-[calc(3.85vw+46px)] lg:px-[calc(14.1vw-19px)] ">
-      <div className="max-w-full h-fit bg-pink-600   mx-auto">
+      <div className="max-w-full h-fit  mx-auto">
         <h2 className="text-[32px] lg:text-[52px] tracking-[-4%] leading-[38px] lg:leading-15 lg:text-[#0E1E14] text-[#030303] text-center">
           <span className="font-bold ">Frequently asked </span>
           <span className=" font-normal  ">questions</span>
