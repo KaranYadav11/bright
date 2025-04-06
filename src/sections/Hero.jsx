@@ -15,9 +15,9 @@ function Hero() {
     },
   ];
   return (
-    <header className="w-full h-[594px]   lg:h-[40vw] bg-gradient-to-br from-[#E3F1E7] to-[#FEEFC7] px-[32px] py-[60px] lg:py-[calc(3.85vw+46px)] lg:px-[calc(14.1vw-19px)] ">
+    <header className="w-full h-[594px]  lg:h-[40vw] bg-gradient-to-br from-[#E3F1E7] to-[#FEEFC7] px-[32px] py-[60px] lg:py-[calc(3.85vw+46px)] lg:px-[calc(14.1vw-19px)] ">
       <Navbar />
-      <div className=" w-full mt-10  h-fit lg:h-fit flex flex-col items-center gap-[50px] lg:gap-[3.75vw] mx-auto ">
+      <div className=" w-full h-full lg:h-fit flex flex-col items-center gap-[24px] lg:gap-[3.75vw] mx-auto ">
         <div className=" w-[296px] lg:w-fit h-[115px] lg:h-fit leading-[38px] lg:leading-[5vw] lg:text-[#0E1E14]  text-[32px] lg:text-[80px]  text-center tracking-[-1px] ">
           <h1 className="font-bold ">Pay off Credit Cards</h1>
           <h1 className="font-normal">with a single monthly payment</h1>
