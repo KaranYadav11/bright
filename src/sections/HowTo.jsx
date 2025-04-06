@@ -76,7 +76,7 @@ function HowTo() {
             </p>
             <ApplyButton />
           </div>
-          <div className="w-full h-[152px] lg:size-[21vw] flex items-center justify-center rounded-[26.67px] shadow-[0px_16px_53.33px_0px_#00000014]">
+          <div className="w-full h-[152px] lg:size-[21vw] bg-white flex items-center justify-center rounded-[26.67px] shadow-[0px_16px_53.33px_0px_#00000014]">
             <img
               src={phone}
               alt="debt"
