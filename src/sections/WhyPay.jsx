@@ -5,9 +5,9 @@ import GetStarted from "../components/GetStarted";
 
 function WhyPay() {
   return (
-    <section className="w-full h-[555px] lg:h-fit bg-white  flex items-center justify-center  px-[32px] py-[60px] lg:py-[calc(3.85vw+46px)] lg:px-[calc(14.1vw-19px)] ">
+    <section className="w-full h-[555px] lg:h-fit bg-white flex items-center justify-center  px-[32px] py-[60px] lg:py-[calc(3.85vw+46px)] lg:px-[calc(14.1vw-19px)] ">
       <div
-        className="  w-full
+        className="w-full 
        flex flex-col items-center justify-center h-[435px] lg:h-fit "
       >
         <div className="w-full flex  items-center justify-center   ">
@@ -15,10 +15,10 @@ function WhyPay() {
             Why pay off cards <span className="font-normal">with Bright?</span>
           </h2>
         </div>
-        <hr className="h-[2px] text-[#D5D7DB] w-[296px] lg:w-full my-[31px] lg:my-[3.75vw]" />
+        <hr className="h-[2px] text-[#D5D7DB] w-full lg:w-full my-[31px] lg:my-[3.75vw]" />
 
         <div className="h-[222px] lg:h-fit  mb-[32px] lg:mb-0  w-[295.49px] lg:w-full gap-[24px] flex flex-col lg:flex-row  items-center  justify-between">
-          <div className=" w-[295.49px] h-[58px] lg:h-fit lg:w-fit  flex items-center justify-center gap-[16px]">
+          <div className=" w-full h-[58px] lg:h-fit lg:w-fit  flex items-center justify-center gap-[16px]">
             <img
               src={bank}
               className="w-auto h-[57.96px] lg:h-[4.8vw] object-contain"
@@ -28,7 +28,7 @@ function WhyPay() {
               Accepts all major bank cards
             </p>
           </div>
-          <div className="w-[295.49px] h-[58px] lg:h-fit lg:w-fit  flex items-center justify-center gap-[16px]">
+          <div className="w-full h-[58px] lg:h-fit lg:w-fit  flex items-center justify-center gap-[16px]">
             <img
               src={coin}
               alt="coin"
@@ -39,7 +39,7 @@ function WhyPay() {
             </p>
           </div>
 
-          <div className="w-[295.49px] h-[58px] lg:h-fit lg:w-fit  flex items-center justify-center gap-[16px]">
+          <div className="w-full h-[58px]  lg:h-fit lg:w-fit  flex items-center justify-center gap-[16px]">
             <img
               src={secure}
               alt="secure"

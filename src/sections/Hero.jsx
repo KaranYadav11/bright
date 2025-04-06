@@ -15,23 +15,23 @@ function Hero() {
     },
   ];
   return (
-    <header className="w-full h-[594px] bg-gradient-to-br from-[#E3F1E7] to-[#FEEFC7]  ">
+    <header className="w-full h-[594px]  lg:h-[40vw] bg-gradient-to-br from-[#E3F1E7] to-[#FEEFC7] px-[32px] py-[60px] lg:py-[calc(3.85vw+46px)] lg:px-[calc(14.1vw-19px)] ">
       <Navbar />
-      <div className=" w-[296px]  h-[295.28px] flex flex-col  gap-[24px] mx-auto absolute top-[89px] left-1/2 transform -translate-x-1/2">
-        <div className="w-full h-[115px] leading-[38px] text-[32px] text-center tracking-[-1px] ">
-          <h1 className=" font-bold ">Pay off Credit Cards</h1>
-          <h1 className=" font-normal">with a single monthly payment</h1>
+      <div className=" w-full lg:w-full   h-[295.28px] lg:h-fit flex flex-col items-center gap-[24px] lg:gap-[3.75vw] mx-auto ">
+        <div className=" w-[296px] lg:w-fit h-[115px] lg:h-fit leading-[38px] lg:leading-[5vw] lg:text-[#0E1E14]  text-[32px] lg:text-[80px]  text-center tracking-[-1px] ">
+          <h1 className="font-bold ">Pay off Credit Cards</h1>
+          <h1 className="font-normal">with a single monthly payment</h1>
         </div>
 
-        <div className="w-full h-[92.28px] flex flex-col gap-[24px] items-start justify-center ">
+        <div className=" w-[296px] lg:w-fit h-[92.28px] lg:h-fit flex flex-col  lg:flex-row lg:items-center lg:gap-[4.16vw] gap-[24px] items-start justify-center ">
           {data.map((data, index) => {
             return (
               <div
                 key={index}
-                className="w-fit h-fit flex items-center justify-center gap-[17.94px]"
+                className="w-fit h-fit flex items-center justify-center  gap-[17.94px]"
               >
                 <Check />
-                <h3 className="text-[#0E1E14] font-medium text-[14.35px] tracking-[-2%]">
+                <h3 className="text-[#0E1E14] font-medium text-[14.35px] lg:text-[1.25vw] tracking-[-2%]">
                   {data.subtitle}
                 </h3>
               </div>

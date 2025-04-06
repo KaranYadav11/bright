@@ -1,7 +1,7 @@
 function PlaystoreLogo() {
   return (
     <svg
-      className="size-[15.39px]"
+      className="size-[15.39px] lg:size-[1.6vw]"
       viewBox="0 0 33 33"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

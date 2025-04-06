@@ -1,6 +1,5 @@
 import phone from "../assets/images/phone.png";
 import visa from "../assets/images/visa.png";
-import co from "../assets/images/co.png";
 import ApplyButton from "../components/ApplyButton";
 import GetStarted from "../components/GetStarted";
 
@@ -79,7 +78,7 @@ function HowTo() {
           </div>
           <div className="w-full h-[152px] lg:size-[21vw] flex items-center justify-center rounded-[26.67px] shadow-[0px_16px_53.33px_0px_#00000014]">
             <img
-              src={co}
+              src={phone}
               alt="debt"
               className="w-auto object-cover  rounded-[26.67px] object-center h-[152px] lg:size-[21vw]"
             />
